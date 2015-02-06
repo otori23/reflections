@@ -1,0 +1,68 @@
+$ git init
+Create repository locally
+
+$ git clone
+Create repository from a remote location
+
+$ git log [--stat]
+View commit history
+
+$ git log --graph --oneline <<branch1, branch2, ....>>
+View commit history in graphical form; each commit consume only one line
+
+$ git diff
+Compare working area with staging area
+
+$ git diff --staged
+Compare staging area with most recent commit in repository
+
+$ git diff commit_id_1 commit_id_2
+Compare two commits
+
+$ git show <<commit_id>>
+Compare commit_id with its parent
+
+$ git branch
+Show me all the branches in a repository
+
+$ git branch <<name>>
+From current commit, create a branch with name = <<name>> 
+
+$ git branch -d <<name>>
+Delete branch with name = <<name>>
+
+$ git checkout <<commit id>>
+$ git checkout <<branch name>>
+Revert working directory to a particular commit or branch
+(Remember branch names just reference tip commit of a branch)
+
+$ git checkout master
+Use to recover from detached HEAD state
+
+$ git checkout -b <<new_branch_name>>
+Form the current commit create a new branch with name= new_branch_name; Then checkout this branch.
+1) Create new branch, i.e. $ git branch <<new_branch_name>>
+2) Checkout or switch to new branch, i.e. $ git checkout <<new_branch_name>>
+  
+$ git status
+What has changed since the last commit? i.e. in working directory and staging area
+
+$ git add <<file(s)>>
+Add changes to staging area
+
+$ git reset <<file(s)>>
+Remove changes from staging area
+
+$ git reset --hard
+Remove all changes from staging area and working directory
+
+$ git merge <<branch1, branch2, ...>>
+- Merges the specified branch(es) into the currently checked-out branch; 
+- Creates a new commit (i.e. the merge commit)
+- Updates the checked out branch to reference this new commit
+
+$ git merge --abort
+Restore intermediate merge files (i.e. as result of conflict) to state before the merge started
+
+$ git config --global
+Edit git configuration

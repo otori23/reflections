@@ -1,0 +1,20 @@
+* HEAD - reference to currently checked out commit
+
+* Detached HEAD state - You are looking at a commit on an unnamed branch; HEAD is pointing
+to the commit on the unnamed branch. Can use git checkout -b <<new_branch_name>> to create and checkout a new named branch; or git checkout master to move HEAD to master.
+
+* .bash-profile - git configuration file in home directory; includes the files git-completion.bash (to enable tabbed completion) and git-prompt.sh (to customize the prompt to show what branch you are on).
+
+* Idea: keep production code on master branch; use other named branches to create/experiment with adding new features.
+
+* branches are just references to commits
+
+* After you checkout a branch, commits to that branch just update the branch name to reference the tip commit in that branch
+
+* Tip - most recent commit on a branch
+
+* Can have multiple branch labels referencing the same commit
+
+* Idea - You can update the master to point to the tip of a new branch (if no other parallel changes have been made to the commit the master label references).
+
+* Some commits can become orphaned (essentially deleted) if they cannot be reached from any existing branch.
