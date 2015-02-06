@@ -4,17 +4,17 @@ A .git folder is added to the directory
 
 2) How is the staging area different from the working directory and the repository? What value do you think it offers?
 
-The staging area allows the programmer to construct sensible commits. It is an intermediate area between the working directory and repo where the programmer than create a logically cohesive commit.
+The staging area allows the programmer to construct sensible commits. It is an intermediate area between the working directory and repository where the programmer can create a logically cohesive commit.
 
 3) How can you use the staging area to make sure you have one commit per logical change?
 
-A programmer can add only the changes that form a logical group into the staging area before commiting
+A programmer can add only the changes that form a logical group into the staging area before committing.
 
 Use staging area to control exactly what changes will go into your commit.
 
 4) What are some situations when branches would be helpful in keeping your history organized? How would branches help?
 
-Branches help when you want to make an experimental change or add a brand new feature and you don't want the commits for the experiment mixed in with the good working code that is publised to all.
+Branches help when you want to make an experimental change or add a brand new feature and you don't want the commits for the experiment mixed in with the good working code that is published to all.
 
 published to all: shared publicly
 good working code: production/official code (on master branch, never breaks always works)
@@ -24,16 +24,16 @@ Idea: use master branch for bug fixing, and use development branches for working
 
 5) How do the diagrams help you visualize the branch structure?
 
-The diagrams are a graphical represention of the commit history of a repository. It makes it easier to see what branches/merges exist in the repository
+The diagrams are a graphical representation of the commit history of a repository. It makes it easier to see what branches/merges exist in the repository
 
 6) What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
 
-All the edits made in both branches (after their common ancestor) are combined and used to create the merged commit. Graphs (i.e nodes/edges) seem to be a natural way to graphically representing merges.
+All the edits made in both branches (after their common ancestor) are combined and used to create the merged commit. Graphs (i.e. nodes/edges) seem to be a natural way of visually representing merges.
 
 7) What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
 
 pros:
-Many merges are straight-forward (i.e. no conflicts), so in this case automatic merging save the programmer time and effor in doing the merge manually
+Many merges are straight-forward (i.e. no conflicts), so in this case automatic merging saves the programmer time and effort in doing the merge manually
 
 cons:
-An automatic merge may lead to unintended side effects 
+An automatic merge may lead to unintended side effects
