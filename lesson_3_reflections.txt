@@ -19,4 +19,17 @@ Use clone to locally build commit history. Then push/pull from original reposito
 Use branches to explore new ideas you might want to incorporate into your production code base.
 
 4) What is the benefit of having a copy of the last known state of the remote stored locally?
+
 When you don't have internet access, you local repository can still give the programmer information on how the local branches differ from the last known state of the remote branches.
+
+5) How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+- I could use a different version control system, i.e. mercurial. In this case the level of effort to collaborate, compared to using Git/GitHub, would be similar.
+
+- Collaboration can be accomplished by placing all project files in a centralized shared location and have collaborators directly edit files at the shared location. There is no learing curve associated with learning to use a version control system, however, keeping the shared documents in sync and resolving editing conflicts can quickly become unmanageable
+
+- Collaboration can be accomplished by passing copies of files amongst collaborators. Again, there is no learning curve associated with learning to use a version contrl system, however, managing all the file copies and trying to figure out which copies are valid and upto date will quickly become unmanageable.
+
+6) When would you want to make changes in a separate branch rather than directly in master? What benefits does each approach have?
+
+You want to make changes in a branch different from master when working on a new code idea/feature. This way your new code can be peer-reviewed and thoroughly debugged before it is incoporated into production code on the master branch.
